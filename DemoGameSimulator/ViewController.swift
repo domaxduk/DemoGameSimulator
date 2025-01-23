@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     // MARK: - Action
     @IBAction func importFileButtonDid(_ sender: Any) {
-        let controller = SelectFileController(types: FileType.allCases)
+        let controller = SelectFileController()
         controller.delegate = self
         controller.present(self)
         self.selectFileController = controller
