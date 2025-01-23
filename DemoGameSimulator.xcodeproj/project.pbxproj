@@ -14,6 +14,10 @@
 		85DE04D72D421B5900A4FAF5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 85DE04D62D421B5900A4FAF5 /* Base */; };
 		85DE04D92D421B5A00A4FAF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DE04D82D421B5900A4FAF5 /* Assets.xcassets */; };
 		85DE04DC2D421B5A00A4FAF5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 85DE04DB2D421B5A00A4FAF5 /* Base */; };
+		85DE04EC2D421E0900A4FAF5 /* SelectFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04EB2D421E0900A4FAF5 /* SelectFileController.swift */; };
+		85DE04EF2D421E6600A4FAF5 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04EE2D421E6600A4FAF5 /* GameType.swift */; };
+		85DE04F22D42249100A4FAF5 /* GameDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04F12D42249100A4FAF5 /* GameDatabaseManager.swift */; };
+		85DE04F52D4225BD00A4FAF5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04F42D4225BD00A4FAF5 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		85DE04D82D421B5900A4FAF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85DE04DB2D421B5A00A4FAF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85DE04DD2D421B5A00A4FAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85DE04EB2D421E0900A4FAF5 /* SelectFileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFileController.swift; sourceTree = "<group>"; };
+		85DE04EE2D421E6600A4FAF5 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
+		85DE04F12D42249100A4FAF5 /* GameDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDatabaseManager.swift; sourceTree = "<group>"; };
+		85DE04F42D4225BD00A4FAF5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		85DE04CE2D421B5800A4FAF5 /* DemoGameSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				85DE04EA2D421C6600A4FAF5 /* Cores */,
 				85DE04CF2D421B5800A4FAF5 /* AppDelegate.swift */,
 				85DE04D12D421B5800A4FAF5 /* SceneDelegate.swift */,
 				85DE04D32D421B5900A4FAF5 /* ViewController.swift */,
@@ -82,13 +91,47 @@
 			path = DemoGameSimulator;
 			sourceTree = "<group>";
 		};
+		85DE04EA2D421C6600A4FAF5 /* Cores */ = {
+			isa = PBXGroup;
+			children = (
+				85DE04F32D4225B600A4FAF5 /* Model */,
+				85DE04F02D42248100A4FAF5 /* Database */,
+				85DE04ED2D421E5C00A4FAF5 /* Select File */,
+			);
+			path = Cores;
+			sourceTree = "<group>";
+		};
+		85DE04ED2D421E5C00A4FAF5 /* Select File */ = {
+			isa = PBXGroup;
+			children = (
+				85DE04EB2D421E0900A4FAF5 /* SelectFileController.swift */,
+			);
+			path = "Select File";
+			sourceTree = "<group>";
+		};
+		85DE04F02D42248100A4FAF5 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				85DE04F12D42249100A4FAF5 /* GameDatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		85DE04F32D4225B600A4FAF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85DE04EE2D421E6600A4FAF5 /* GameType.swift */,
+				85DE04F42D4225BD00A4FAF5 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C7ADE7A77E4C621BF3BE6497 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				16B10238624E90D8F55E87C2 /* Pods-DemoGameSimulator.debug.xcconfig */,
 				48DE85AFCDDBF4717187A31E /* Pods-DemoGameSimulator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +146,7 @@
 				85DE04C82D421B5800A4FAF5 /* Sources */,
 				85DE04C92D421B5800A4FAF5 /* Frameworks */,
 				85DE04CA2D421B5800A4FAF5 /* Resources */,
+				3E327E31EEC6C416D09E28E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +204,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3E327E31EEC6C416D09E28E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoGameSimulator/Pods-DemoGameSimulator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoGameSimulator/Pods-DemoGameSimulator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoGameSimulator/Pods-DemoGameSimulator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBAED42A13D340D3EAD7C810 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,7 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DE04F22D42249100A4FAF5 /* GameDatabaseManager.swift in Sources */,
 				85DE04D42D421B5900A4FAF5 /* ViewController.swift in Sources */,
+				85DE04F52D4225BD00A4FAF5 /* Game.swift in Sources */,
+				85DE04EC2D421E0900A4FAF5 /* SelectFileController.swift in Sources */,
+				85DE04EF2D421E6600A4FAF5 /* GameType.swift in Sources */,
 				85DE04D02D421B5800A4FAF5 /* AppDelegate.swift in Sources */,
 				85DE04D22D421B5800A4FAF5 /* SceneDelegate.swift in Sources */,
 			);

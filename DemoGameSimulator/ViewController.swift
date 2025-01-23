@@ -8,12 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private var selectFileController: SelectFileController?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    // MARK: - Action
+    @IBAction func importFileButtonDid(_ sender: Any) {
+        let controller = SelectFileController(types: FileType.allCases)
+        controller.delegate = self
+        controller.present(self)
+        self.selectFileController = controller
     }
+}
 
-
+// MARK: - SelectFileControllerDelegate
+extension ViewController: SelectFileControllerDelegate {
+    func selectFileController(_ controller: SelectFileController, didSelectFile url: URL) {
+        
+    }
 }
 

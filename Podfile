@@ -6,5 +6,8 @@ target 'DemoGameSimulator' do
   use_frameworks!
 
   # Pods for DemoGameSimulator
+  pod 'RealmSwift'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
 end
