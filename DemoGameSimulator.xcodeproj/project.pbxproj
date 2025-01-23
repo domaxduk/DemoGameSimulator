@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C7ADBDFB7B3DD761CF90384 /* Pods_DemoGameSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613DFA5BB9889B0947FBE353 /* Pods_DemoGameSimulator.framework */; };
 		85DE04D02D421B5800A4FAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04CF2D421B5800A4FAF5 /* AppDelegate.swift */; };
 		85DE04D22D421B5800A4FAF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04D12D421B5800A4FAF5 /* SceneDelegate.swift */; };
 		85DE04D42D421B5900A4FAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04D32D421B5900A4FAF5 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16B10238624E90D8F55E87C2 /* Pods-DemoGameSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoGameSimulator.debug.xcconfig"; path = "Target Support Files/Pods-DemoGameSimulator/Pods-DemoGameSimulator.debug.xcconfig"; sourceTree = "<group>"; };
+		48DE85AFCDDBF4717187A31E /* Pods-DemoGameSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoGameSimulator.release.xcconfig"; path = "Target Support Files/Pods-DemoGameSimulator/Pods-DemoGameSimulator.release.xcconfig"; sourceTree = "<group>"; };
+		613DFA5BB9889B0947FBE353 /* Pods_DemoGameSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoGameSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DE04CC2D421B5800A4FAF5 /* DemoGameSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoGameSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DE04CF2D421B5800A4FAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85DE04D12D421B5800A4FAF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C7ADBDFB7B3DD761CF90384 /* Pods_DemoGameSimulator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0017B7FC472672F7E0B4C533 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				613DFA5BB9889B0947FBE353 /* Pods_DemoGameSimulator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		85DE04C32D421B5800A4FAF5 = {
 			isa = PBXGroup;
 			children = (
 				85DE04CE2D421B5800A4FAF5 /* DemoGameSimulator */,
 				85DE04CD2D421B5800A4FAF5 /* Products */,
+				C7ADE7A77E4C621BF3BE6497 /* Pods */,
+				0017B7FC472672F7E0B4C533 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = DemoGameSimulator;
 			sourceTree = "<group>";
 		};
+		C7ADE7A77E4C621BF3BE6497 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16B10238624E90D8F55E87C2 /* Pods-DemoGameSimulator.debug.xcconfig */,
+				48DE85AFCDDBF4717187A31E /* Pods-DemoGameSimulator.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85DE04E02D421B5A00A4FAF5 /* Build configuration list for PBXNativeTarget "DemoGameSimulator" */;
 			buildPhases = (
+				BBAED42A13D340D3EAD7C810 /* [CP] Check Pods Manifest.lock */,
 				85DE04C82D421B5800A4FAF5 /* Sources */,
 				85DE04C92D421B5800A4FAF5 /* Frameworks */,
 				85DE04CA2D421B5800A4FAF5 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBAED42A13D340D3EAD7C810 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoGameSimulator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85DE04C82D421B5800A4FAF5 /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		85DE04E12D421B5A00A4FAF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B10238624E90D8F55E87C2 /* Pods-DemoGameSimulator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +367,7 @@
 		};
 		85DE04E22D421B5A00A4FAF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48DE85AFCDDBF4717187A31E /* Pods-DemoGameSimulator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
