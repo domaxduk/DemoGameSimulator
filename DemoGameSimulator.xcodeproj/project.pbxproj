@@ -16,24 +16,11 @@
 		85DE04DC2D421B5A00A4FAF5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 85DE04DB2D421B5A00A4FAF5 /* Base */; };
 		85DE04EC2D421E0900A4FAF5 /* SelectFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04EB2D421E0900A4FAF5 /* SelectFileController.swift */; };
 		85DE04EF2D421E6600A4FAF5 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04EE2D421E6600A4FAF5 /* GameType.swift */; };
-		85DE04F22D42249100A4FAF5 /* GameDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04F12D42249100A4FAF5 /* GameDatabaseManager.swift */; };
 		85DE04F52D4225BD00A4FAF5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04F42D4225BD00A4FAF5 /* Game.swift */; };
-		85DE04F92D42342D00A4FAF5 /* openvgdb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 85DE04F72D42342D00A4FAF5 /* openvgdb.sqlite */; };
-		85DE04FA2D42342D00A4FAF5 /* cheatbase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 85DE04F82D42342D00A4FAF5 /* cheatbase.sqlite */; };
-		85DE04FC2D42368400A4FAF5 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04FB2D42368400A4FAF5 /* GameProtocol.swift */; };
-		85DE04FF2D423BC900A4FAF5 /* EmulatorCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE04FE2D423BC900A4FAF5 /* EmulatorCore.swift */; };
-		85DE05012D423F2C00A4FAF5 /* CoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05002D423F2C00A4FAF5 /* CoreProtocol.swift */; };
-		85DE05042D423F6B00A4FAF5 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05032D423F6B00A4FAF5 /* Input.swift */; };
-		85DE05072D4240A100A4FAF5 /* VideoFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05062D4240A100A4FAF5 /* VideoFormat.swift */; };
-		85DE050A2D4240DF00A4FAF5 /* CheatFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05092D4240DF00A4FAF5 /* CheatFormat.swift */; };
-		85DE050D2D42422200A4FAF5 /* CharacterSetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE050C2D42422200A4FAF5 /* CharacterSetExtension.swift */; };
-		85DE050F2D42426800A4FAF5 /* EmulatorBridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE050E2D42426800A4FAF5 /* EmulatorBridging.swift */; };
-		85DE05122D42429700A4FAF5 /* AudioRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05112D42429700A4FAF5 /* AudioRendering.swift */; };
-		85DE05142D4242A600A4FAF5 /* VideoRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05132D4242A600A4FAF5 /* VideoRendering.swift */; };
-		85DE05172D4242C200A4FAF5 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05162D4242C200A4FAF5 /* RingBuffer.swift */; };
 		FA7E57662D434F9E00F5A5F4 /* AltKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA7E57652D434F9E00F5A5F4 /* AltKit */; };
 		FA7E57692D434FAD00F5A5F4 /* ShowTouches in Frameworks */ = {isa = PBXBuildFile; productRef = FA7E57682D434FAD00F5A5F4 /* ShowTouches */; };
 		FA7E576B2D434FCF00F5A5F4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7E576A2D434FCF00F5A5F4 /* CoreMotion.framework */; };
+		FA7E576E2D43511B00F5A5F4 /* DeltaCore in Frameworks */ = {isa = PBXBuildFile; productRef = FA7E576D2D43511B00F5A5F4 /* DeltaCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,21 +37,7 @@
 		85DE04DD2D421B5A00A4FAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85DE04EB2D421E0900A4FAF5 /* SelectFileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFileController.swift; sourceTree = "<group>"; };
 		85DE04EE2D421E6600A4FAF5 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
-		85DE04F12D42249100A4FAF5 /* GameDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDatabaseManager.swift; sourceTree = "<group>"; };
 		85DE04F42D4225BD00A4FAF5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		85DE04F72D42342D00A4FAF5 /* openvgdb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = openvgdb.sqlite; sourceTree = "<group>"; };
-		85DE04F82D42342D00A4FAF5 /* cheatbase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = cheatbase.sqlite; sourceTree = "<group>"; };
-		85DE04FB2D42368400A4FAF5 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
-		85DE04FE2D423BC900A4FAF5 /* EmulatorCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatorCore.swift; sourceTree = "<group>"; };
-		85DE05002D423F2C00A4FAF5 /* CoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreProtocol.swift; sourceTree = "<group>"; };
-		85DE05032D423F6B00A4FAF5 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
-		85DE05062D4240A100A4FAF5 /* VideoFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFormat.swift; sourceTree = "<group>"; };
-		85DE05092D4240DF00A4FAF5 /* CheatFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatFormat.swift; sourceTree = "<group>"; };
-		85DE050C2D42422200A4FAF5 /* CharacterSetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetExtension.swift; sourceTree = "<group>"; };
-		85DE050E2D42426800A4FAF5 /* EmulatorBridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatorBridging.swift; sourceTree = "<group>"; };
-		85DE05112D42429700A4FAF5 /* AudioRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRendering.swift; sourceTree = "<group>"; };
-		85DE05132D4242A600A4FAF5 /* VideoRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRendering.swift; sourceTree = "<group>"; };
-		85DE05162D4242C200A4FAF5 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		FA7E576A2D434FCF00F5A5F4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -73,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7E576E2D43511B00F5A5F4 /* DeltaCore in Frameworks */,
 				7C7ADBDFB7B3DD761CF90384 /* Pods_DemoGameSimulator.framework in Frameworks */,
 				FA7E57662D434F9E00F5A5F4 /* AltKit in Frameworks */,
 				FA7E57692D434FAD00F5A5F4 /* ShowTouches in Frameworks */,
@@ -128,10 +102,7 @@
 		85DE04EA2D421C6600A4FAF5 /* Cores */ = {
 			isa = PBXGroup;
 			children = (
-				85DE050B2D42421200A4FAF5 /* Extension */,
-				85DE04FD2D423BBE00A4FAF5 /* EmulatorCore */,
 				85DE04F32D4225B600A4FAF5 /* Model */,
-				85DE04F02D42248100A4FAF5 /* Database */,
 				85DE04ED2D421E5C00A4FAF5 /* Select File */,
 			);
 			path = Cores;
@@ -145,96 +116,13 @@
 			path = "Select File";
 			sourceTree = "<group>";
 		};
-		85DE04F02D42248100A4FAF5 /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				85DE04F62D42341800A4FAF5 /* SQLite */,
-				85DE04F12D42249100A4FAF5 /* GameDatabaseManager.swift */,
-			);
-			path = Database;
-			sourceTree = "<group>";
-		};
 		85DE04F32D4225B600A4FAF5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				85DE05082D4240D700A4FAF5 /* Game */,
-				85DE05092D4240DF00A4FAF5 /* CheatFormat.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		85DE04F62D42341800A4FAF5 /* SQLite */ = {
-			isa = PBXGroup;
-			children = (
-				85DE04F82D42342D00A4FAF5 /* cheatbase.sqlite */,
-				85DE04F72D42342D00A4FAF5 /* openvgdb.sqlite */,
-			);
-			path = SQLite;
-			sourceTree = "<group>";
-		};
-		85DE04FD2D423BBE00A4FAF5 /* EmulatorCore */ = {
-			isa = PBXGroup;
-			children = (
-				85DE05152D4242BC00A4FAF5 /* Audio */,
-				85DE05102D42428E00A4FAF5 /* Rendering */,
-				85DE05052D42409800A4FAF5 /* Video */,
-				85DE05022D423F5B00A4FAF5 /* Protocols */,
-				85DE04FE2D423BC900A4FAF5 /* EmulatorCore.swift */,
-				85DE05002D423F2C00A4FAF5 /* CoreProtocol.swift */,
-				85DE050E2D42426800A4FAF5 /* EmulatorBridging.swift */,
-			);
-			path = EmulatorCore;
-			sourceTree = "<group>";
-		};
-		85DE05022D423F5B00A4FAF5 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				85DE05032D423F6B00A4FAF5 /* Input.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		85DE05052D42409800A4FAF5 /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				85DE05062D4240A100A4FAF5 /* VideoFormat.swift */,
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
-		85DE05082D4240D700A4FAF5 /* Game */ = {
 			isa = PBXGroup;
 			children = (
 				85DE04EE2D421E6600A4FAF5 /* GameType.swift */,
 				85DE04F42D4225BD00A4FAF5 /* Game.swift */,
-				85DE04FB2D42368400A4FAF5 /* GameProtocol.swift */,
 			);
-			path = Game;
-			sourceTree = "<group>";
-		};
-		85DE050B2D42421200A4FAF5 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				85DE050C2D42422200A4FAF5 /* CharacterSetExtension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		85DE05102D42428E00A4FAF5 /* Rendering */ = {
-			isa = PBXGroup;
-			children = (
-				85DE05112D42429700A4FAF5 /* AudioRendering.swift */,
-				85DE05132D4242A600A4FAF5 /* VideoRendering.swift */,
-			);
-			path = Rendering;
-			sourceTree = "<group>";
-		};
-		85DE05152D4242BC00A4FAF5 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				85DE05162D4242C200A4FAF5 /* RingBuffer.swift */,
-			);
-			path = Audio;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C7ADE7A77E4C621BF3BE6497 /* Pods */ = {
@@ -267,6 +155,7 @@
 			packageProductDependencies = (
 				FA7E57652D434F9E00F5A5F4 /* AltKit */,
 				FA7E57682D434FAD00F5A5F4 /* ShowTouches */,
+				FA7E576D2D43511B00F5A5F4 /* DeltaCore */,
 			);
 			productName = DemoGameSimulator;
 			productReference = 85DE04CC2D421B5800A4FAF5 /* DemoGameSimulator.app */;
@@ -314,8 +203,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DE04FA2D42342D00A4FAF5 /* cheatbase.sqlite in Resources */,
-				85DE04F92D42342D00A4FAF5 /* openvgdb.sqlite in Resources */,
 				85DE04D92D421B5A00A4FAF5 /* Assets.xcassets in Resources */,
 				85DE04DC2D421B5A00A4FAF5 /* Base in Resources */,
 				85DE04D72D421B5900A4FAF5 /* Base in Resources */,
@@ -371,24 +258,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DE050D2D42422200A4FAF5 /* CharacterSetExtension.swift in Sources */,
-				85DE05142D4242A600A4FAF5 /* VideoRendering.swift in Sources */,
-				85DE04FF2D423BC900A4FAF5 /* EmulatorCore.swift in Sources */,
-				85DE05012D423F2C00A4FAF5 /* CoreProtocol.swift in Sources */,
-				85DE04F22D42249100A4FAF5 /* GameDatabaseManager.swift in Sources */,
-				85DE05042D423F6B00A4FAF5 /* Input.swift in Sources */,
-				85DE050A2D4240DF00A4FAF5 /* CheatFormat.swift in Sources */,
-				85DE05072D4240A100A4FAF5 /* VideoFormat.swift in Sources */,
-				85DE04FC2D42368400A4FAF5 /* GameProtocol.swift in Sources */,
 				85DE04D42D421B5900A4FAF5 /* ViewController.swift in Sources */,
 				85DE04F52D4225BD00A4FAF5 /* Game.swift in Sources */,
-				85DE05172D4242C200A4FAF5 /* RingBuffer.swift in Sources */,
-				85DE050F2D42426800A4FAF5 /* EmulatorBridging.swift in Sources */,
 				85DE04EC2D421E0900A4FAF5 /* SelectFileController.swift in Sources */,
 				85DE04EF2D421E6600A4FAF5 /* GameType.swift in Sources */,
 				85DE04D02D421B5800A4FAF5 /* AppDelegate.swift in Sources */,
 				85DE04D22D421B5800A4FAF5 /* SceneDelegate.swift in Sources */,
-				85DE05122D42429700A4FAF5 /* AudioRendering.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +518,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA7E57672D434FAD00F5A5F4 /* XCRemoteSwiftPackageReference "ShowTouches" */;
 			productName = ShowTouches;
+		};
+		FA7E576D2D43511B00F5A5F4 /* DeltaCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DeltaCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
