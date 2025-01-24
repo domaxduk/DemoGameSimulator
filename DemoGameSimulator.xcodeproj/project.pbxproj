@@ -31,6 +31,9 @@
 		85DE05122D42429700A4FAF5 /* AudioRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05112D42429700A4FAF5 /* AudioRendering.swift */; };
 		85DE05142D4242A600A4FAF5 /* VideoRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05132D4242A600A4FAF5 /* VideoRendering.swift */; };
 		85DE05172D4242C200A4FAF5 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DE05162D4242C200A4FAF5 /* RingBuffer.swift */; };
+		FA7E57662D434F9E00F5A5F4 /* AltKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA7E57652D434F9E00F5A5F4 /* AltKit */; };
+		FA7E57692D434FAD00F5A5F4 /* ShowTouches in Frameworks */ = {isa = PBXBuildFile; productRef = FA7E57682D434FAD00F5A5F4 /* ShowTouches */; };
+		FA7E576B2D434FCF00F5A5F4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7E576A2D434FCF00F5A5F4 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,7 @@
 		85DE05112D42429700A4FAF5 /* AudioRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRendering.swift; sourceTree = "<group>"; };
 		85DE05132D4242A600A4FAF5 /* VideoRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRendering.swift; sourceTree = "<group>"; };
 		85DE05162D4242C200A4FAF5 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		FA7E576A2D434FCF00F5A5F4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C7ADBDFB7B3DD761CF90384 /* Pods_DemoGameSimulator.framework in Frameworks */,
+				FA7E57662D434F9E00F5A5F4 /* AltKit in Frameworks */,
+				FA7E57692D434FAD00F5A5F4 /* ShowTouches in Frameworks */,
+				FA7E576B2D434FCF00F5A5F4 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 		0017B7FC472672F7E0B4C533 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA7E576A2D434FCF00F5A5F4 /* CoreMotion.framework */,
 				613DFA5BB9889B0947FBE353 /* Pods_DemoGameSimulator.framework */,
 			);
 			name = Frameworks;
@@ -256,6 +264,10 @@
 			dependencies = (
 			);
 			name = DemoGameSimulator;
+			packageProductDependencies = (
+				FA7E57652D434F9E00F5A5F4 /* AltKit */,
+				FA7E57682D434FAD00F5A5F4 /* ShowTouches */,
+			);
 			productName = DemoGameSimulator;
 			productReference = 85DE04CC2D421B5800A4FAF5 /* DemoGameSimulator.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +296,10 @@
 				Base,
 			);
 			mainGroup = 85DE04C32D421B5800A4FAF5;
+			packageReferences = (
+				FA7E57642D434F9E00F5A5F4 /* XCRemoteSwiftPackageReference "AltKit" */,
+				FA7E57672D434FAD00F5A5F4 /* XCRemoteSwiftPackageReference "ShowTouches" */,
+			);
 			productRefGroup = 85DE04CD2D421B5800A4FAF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -597,6 +613,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA7E57642D434F9E00F5A5F4 /* XCRemoteSwiftPackageReference "AltKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/altstoreio/AltKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+		FA7E57672D434FAD00F5A5F4 /* XCRemoteSwiftPackageReference "ShowTouches" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Cyberbeni/ShowTouches.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA7E57652D434F9E00F5A5F4 /* AltKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7E57642D434F9E00F5A5F4 /* XCRemoteSwiftPackageReference "AltKit" */;
+			productName = AltKit;
+		};
+		FA7E57682D434FAD00F5A5F4 /* ShowTouches */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7E57672D434FAD00F5A5F4 /* XCRemoteSwiftPackageReference "ShowTouches" */;
+			productName = ShowTouches;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85DE04C42D421B5800A4FAF5 /* Project object */;
 }

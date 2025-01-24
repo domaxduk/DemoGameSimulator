@@ -10,4 +10,6 @@ target 'DemoGameSimulator' do
   pod 'RxSwift'
   pod 'RxCocoa'
 
+  pod 'DeltaCore', :path => 'Cores/DeltaCore'
+  pod 'GBADeltaCore', :path => 'Cores/GBADeltaCore'
 end
